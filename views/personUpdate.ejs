@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar</title>
+</head>
+
+<body>
+    <h1>Actualizas Personas</h1>
+    <form action="/updatePerson" method="POST">
+        <!-- NSS -->
+        <label for="nss">NSS:</label>
+        <input type="text" id="nss" name="nss" value="<%= `${person.nss}` %>"><br><br>
+        <!-- NOMBRE -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="" name="nombre" value="<%= `${person.nombre}` %>"><br><br>
+        <!-- EDAD -->
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" name="edad" value="<%= `${person.edad}` %>"><br><br>
+        <!-- TIPO DE SANGRE -->
+        <label for="tipoSangre">Tipo de sangre:</label>
+        <input type="text" id="tipoSangre" name="tipoSangre" value="<%= `${person.tipoSangre}` %>"><br><br>
+        <!-- ID -->
+        <label for="objId">ID:</label>
+        <input type="text" id="objId" name="objId" value="<%= `${person._id}` %>"><br><br>
+        <!-- SUBMIT BUTTON -->
+        <input type="submit" value="Submit">
+    </form>
+    <a href="./main">Regresar</a>
+</body>
+
+</html>
